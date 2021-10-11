@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+.main-section {
+ padding-top: 30px;
+ margin: auto;
+}
+
+.main-form {
+    color: bisque;
+    background: #24303c;
+    width: 800px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+} 
+.main-form__sections{
+    padding: 30px;
+    margin: 10px;
+}
+
+.main-form__submit{
+    padding: 10px;
+    margin:20px;
+}
