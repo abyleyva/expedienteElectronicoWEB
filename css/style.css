@@ -2,9 +2,9 @@
 {
     --white:#FFFFFF;
     --black:#000000;
-    --very-ligth-pink:#C7C7C7;
-    --text-input-flield:#F7F7F7;
-    --hospital-green:#ACD9B2;
+    --color-ligth:#C7C7C7;
+    --color-primary:#368af8;
+    --color-input-field:#eef3f8;
     --sm:14px;
     --md:16px;
     --lg:18px;
@@ -28,6 +28,7 @@ body {
     display:grid;
     grid-template-rows: auto 1fr auto;
     width: 300px;
+    justify-items:center ;
 
 }
 .logo {
@@ -42,7 +43,7 @@ body {
     text-align: center;
 }
 .subtitle{
-    color: var(--very-ligth-pink);
+    color: var(--color-ligth);
     font-size: var(--md);
     font-weight: 300px;
     margin-top: 0;
@@ -59,7 +60,7 @@ body {
     margin-bottom: 4px;
 }
 .input{
-    background-color: var(--text-input-flield);
+    background-color: var(--color-input-field);
     border: none;
     border-radius: 8px;
     height: 30px;
@@ -67,8 +68,31 @@ body {
     padding: 6px;
     margin-bottom: 12px;
 }
+.email-image{
+    background-color: var(--color-input-field);
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.email-image img{
+    width: 80px;
+}
+.resend {
+    font-size: var(--sm);
+}
+.resend span {
+    color: var(--color-ligth);
+} 
+.resend a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
 .primary-button {
-    background-color: var(--hospital-green);
+    background-color: var(--color-primary);
     border-radius: 8px;
     border:none;
     color: var(--white);
