@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expediente Electrónico - Historia Clínica</title>
+    <link rel="stylesheet" href="./css/vars.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+</head>
+<body>
+<!--<header>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#"></a>
+            <a href="#">Dr. E. Alejandro Guerrero Torres</a>
+        </nav>
+    </header>-->
+    <main class="historiaclinica-main">
+        <section class="form-container">
+            <h1 class="title">HISTORIA CLINICA</h1>
+            <form action="" id="historiaclinica" class="form">
+               <fieldset class="form__fieldset">
+                    <legend><h4>FICHA CLINICA</h4></legend>
+                    <label for="nombre" class="label">
+                        <span>Nombre</span>
+                        <input type="text" class="input" id="nombre" name="nombre" placeholder="Nombre" />
+                    </label>
+                    <label for="fechaNacimento" class="label">
+                        <span>Fecha de Nacimento</span>
+                        <input type="date" class="input" id="fechaNacimiento" name="fechaNacimiento" autocomplete="bday" required />
+                    </label>
+                    <label for="edad" class="label">
+                        <span>Edad</span>
+                        <input type="number" class="input" id="edad" name="edad" placeholder="Edad" />
+                    </label>
+                    <label for="sexo" class="label">
+                        <span>Sexo</span>
+                        <input list="sexo" class="input">
+                        <datalist id="sexo">
+                            <option value="Sin Especificar"></option>
+                            <option value="M"></option>
+                            <option value="F"></option>
+                        </datalist>
+                    </label>
+                    <label for="ocupacion" class="label">
+                        <span>Ocupacion</span>
+                        <input type="text" class="input" id="ocupacion" name="ocupacion" placeholder="Ocupacion" />
+                    </label>
+                    <label for="domicilio" class="label">
+                        <span>Domicilio</span>
+                        <input type="text" class="input" id="domicilio" name="domicilio" placeholder="Domicilio" autocomplete="address-level1" />
+                    </label>
+                    <label for="telefono" class="label">
+                        <span>Tel./Cel.</span>
+                        <input type="text" class="input" id="telefono" name="telefono" placeholder="Telefono / Celular" required />
+                    </label>
+                    <label for="correo" class="label">
+                        <span>Correo</span>
+                        <input type="email" class="input" id="correo" name="correo" placeholder="nombre@correo.com" autocomplete="email" required />
+                    </label>
+                </fieldset>            
+                <!--<fieldset class="form__fieldset">
+                    <legend><h4>MOTIVO DE CONSULTA</h4></legend>
+                    <textarea name="motivoconsulta" class="input" id="motivoconsulta" form="historiaclinica" rows="5" cols="50"></textarea>
+                </fieldset>
+                
+                <fieldset class="form__fieldset">
+                    <legend>
+                        <h4>ANTECEDENTES PERSONALES</h4>
+                    </legend>
+                    <label for="patologicos">
+                        <span>Patológicos</span>
+                        <input type="text" name="patologicos" id="patologicos">
+                    </label>
+                    <label for="hta">
+                        <span>HTA</span>
+                        <input type="text" name="hta" id="hta">
+                    </label>
+                    <label for="diabetes">
+                        <span>Diabetes</span>
+                        <input type="text" name="diabetes" id="diabetes">
+                    </label>
+                    <label for="asma">
+                        <span>Asma</span>
+                        <input type="text" name="asma" id="asma">
+                    </label>
+                    <label for="quirurgicos">
+                        <span>Quirúrgicos</span>
+                        <input type="text" name="quirurgicos" id="quirurgicos">
+                    </label>
+                    <label for="hospitalizaciones">
+                        <span>Hospitalizaciones</span>
+                        <input type="text" name="hospitalizaciones" id="hospitalizaciones">
+                    </label>
+                    <label for="traumatismos">
+                        <span>Traumatismos</span>
+                        <input type="text" name="traumatismos" id="traumatismos">
+                    </label>
+                    <label for="Alergicos">
+                        <span>Alérgicos</span>
+                        <input type="text" name="Alergicos" id="Alergicos">
+                    </label>
+                    <label for="transfusiones">
+                        <span>Transfusiones</span>
+                        <input type="text" name="transfusiones" id="transfusiones">
+                    </label>
+                    <label for="tipoSangre">
+                        <span>Tipo de Sangre</span>
+                        <input type="text" name="tipoSangre" id="tipoSangre">
+                    </label>
+                    <label for="tabaquismo">
+                        <span>Tabaquismo</span>
+                        <input type="text" name="tabaquismo" id="tabaquismo">
+                    </label>
+                    <label for="alcohol">
+                        <span>Alcohol</span>
+                        <input type="text" name="alcohol" id="alcohol">
+                    </label>
+                    <label for="drogas">
+                        <span>Drogas</span>
+                        <input type="text" name="drogas" id="drogas">
+                    </label>
+                    <label for="medicamentosActuales">
+                        <span>Medicamentos Actuales</span>
+                        <input type="text" name="medicamentosActuales" id="medicamentosActuales">
+                    </label>
+                </fieldset>
+                <fieldset class="form__fieldset">
+                    <legend>
+                        <h4>GINECOLÓGICOS</h4>
+                    </legend>
+                    <label for="g">
+                        <span>G</span>
+                        <input type="text" name="g" id="g">
+                    </label>
+                    <label for="p">
+                        <span>P</span>
+                        <input type="text" name="p" id="p">
+                    </label>
+                    <label for="c">
+                        <span>C</span>
+                        <input type="text" name="c" id="c">
+                    </label>
+                    <label for="a">
+                        <span>A</span>
+                        <input type="text" name="a" id="a">
+                    </label>
+                    <label for="fum">
+                        <span>FUM</span>
+                        <input type="text" name="fum" id="fum">
+                    </label>
+                    <label for="fup">
+                        <span>FUP</span>
+                        <input type="text" name="fup" id="fup">
+                    </label>
+                    <label for="fuc">
+                        <span>FUC</span>
+                        <input type="text" name="fuc" id="fuc">
+                    </label>
+                    <label for="metodoAnticonceptivo">
+                        <span>Método Anticonceptivo</span>
+                        <input type="text" name="metodoAnticonceptivo" id="metodoAnticonceptivo">
+                    </label>
+                    <label for="ritmo">
+                        <span>Ritmo</span>
+                        <input type="text" name="ritmo" id="ritmo">
+                    </label>
+                    <label for="otros">
+                        <span>Otros</span>
+                        <input type="text" name="otros" id="otros">
+                    </label>
+                </fieldset>
+                <fieldset class="form__fieldset">
+                    <legend>
+                        <h4>ANTECEDENTES HEREDOFAMILIARES</h4>
+                    </legend>
+                    <textarea name="antecedenteHeredofamiliares" id="antecedenteHeredofamiliares" form="historiaclinica" rows="5" cols="50"></textarea>
+                </fieldset>
+                <fieldset class="form__fieldset">
+                    <legend>
+                        <h4>INTERROGATORIO</h4>
+                    </legend>
+                    <label for="respiratorio">
+                        <span>Respiratorio</span>
+                        <input type="text" name="respiratorio" id="respiratorio">
+                    </label>
+                    <label for="cardiovascular">
+                        <span>Cardiovascular</span>
+                        <input type="text" name="cardiovascular" id="cardiovascular">
+                    </label>
+                    <label for="digestivo">
+                        <span>Digestivo</span>
+                        <input type="text" name="digestivo" id="digestivo">
+                    </label>
+                    <label for="muscular">
+                        <span>Muscular</span>
+                        <input type="text" name="muscular" id="muscular">
+                    </label>
+                    <label for="nervioso">
+                        <span>Nervioso</span>
+                        <input type="text" name="nervioso" id="nervioso">
+                    </label>
+                    <label for="urinario">
+                        <span>Urinario</span>
+                        <input type="text" name="urinario" id="urinario">
+                    </label>
+                </fieldset>
+                <fieldset class="form__fieldset">
+                    <legend>
+                        <h4>EXPLORACIÓN FÍSICA</h4>
+                    </legend>
+                    <span>SIGNOS VITALES</span>
+                    <label for="ta">
+                        <span>T/A</span>
+                        <input type="text" name="ta" id="ta">
+                    </label>
+                    <label for="fc">
+                        <span>FC</span>
+                        <input type="text" name="fc" id="fc">
+                    </label>
+                    <label for="fr">
+                        <span>FR</span>
+                        <input type="text" name="fr" id="fr">
+                    </label>
+                    <label for="temp">
+                        <span>Temp</span>
+                        <input type="text" name="temp" id="temp">
+                    </label>
+                    <label for="peso">
+                        <span>Peso</span>
+                        <input type="text" name="peso" id="peso">
+                    </label>
+                    <label for="talla">
+                        <span>Talla</span>
+                        <input type="text" name="talla" id="talla">
+                    </label>
+                    <label for="imc">
+                        <span>IMC</span>
+                        <input type="text" name="imc" id="imc">
+                    </label>
+                    <label for="torax">
+                        <span>Torax</span>
+                        <input type="text" name="torax" id="torax">
+                    </label>
+                    <label for="cint">
+                        <span>Cint.</span>
+                        <input type="text" name="cint" id="cint">
+                    </label>
+                    <label for="cadera">
+                        <span>Cadera</span>
+                        <input type="text" name="cadera" id="cadera">
+                    </label>
+                    <label for="general">
+                        <span>General</span>
+                        <textarea name="general" id="general" form="historiaclinica" rows="2" cols="50"></textarea>
+                    </label>
+                    <label for="mamas">
+                        <span>Mamas</span>
+                        <textarea name="mamas" id="mamas" form="historiaclinica" rows="2" cols="50"></textarea>
+                    </label>
+                    <label for="esternonDerecho">
+                        <span>Esternón/Areola Derecho</span>
+                        <input type="text" name="esternonDerecho" id="esternonDerecho">
+                    </label>
+                    <label for="esternonIzquierdo">
+                        <span>Esternon/Areola Izquierdo</span>
+                        <input type="text" name="esternonIzquierdo" id="esternonIzquierdo">
+                    </label>
+                    <label for="baseDerecha">
+                        <span>Base Derecha</span>
+                        <input type="text" name="baseDerecha" id="baseDerecha">
+                    </label>
+                    <label for="baseIzquierda">
+                        <span>Base Izquierda</span>
+                        <input type="text" name="baseIzquierda" id="baseIzquierda">
+                    </label>
+                    <label for="verticalDerecha">
+                        <span>Vertical Derecha</span>
+                        <input type="text" name="verticalDerecha" id="verticalDerecha">
+                    </label>
+                    <label for="verticalIzquierda">
+                        <span>Vertical Izquierda</span>
+                        <input type="text" name="verticalIzquierda" id="verticalIzquierda">
+                    </label>
+                    <label for="cobertura">
+                        <span>Cobertura</span>
+                        <input type="text" name="cobertura" id="cobertura">
+                    </label>
+                    <label for="proyeccion">
+                        <span>Proyección</span>
+                        <input type="text" name="proyeccion" id="proyeccion">
+                    </label>
+                    <label for="ptosis">
+                        <span>Ptosis</span>
+                        <input type="text" name="ptosis" id="ptosis">
+                    </label>
+                    <label for="abdomen">
+                        <span>Abdomen</span>
+                        <textarea name="abdomen" id="abdomen" form="historiaclinica" rows="2" cols="50"></textarea>
+                    </label>
+                    <label for="brazos">
+                        <span>Brazos</span>
+                        <textarea name="brazos" id="brazos" form="historiaclinica" rows="2" cols="50"></textarea>
+                    </label>
+                    <label for="muslos">
+                        <span>Muslos</span>
+                        <textarea name="muslos" id="muslos" form="historiaclinica" rows="2" cols="50"></textarea>
+                    </label>
+                    <label for="otros">
+                        <span>Otros</span>
+                        <textarea name="otros" id="otros" form="historiaclinica" rows="2" cols="50"></textarea>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        <h4>
+                            Cuerpo Humano
+                        </h4>
+                    </legend>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        <h4>
+                            Laboratorios
+                        </h4>
+                    </legend>
+                    <label for="hb">
+                        <span>Hb.</span>
+                        <input type="text" name="hb" id="hb">
+                    </label>
+                    <label for="hto">
+                        <span>Hto.</span>
+                        <input type="text" name="hto" id="hto">
+                    </label>
+                    <label for="leucos">
+                        <span>Leucos.</span>
+                        <input type="text" name="leucos" id="leucos">
+                    </label>
+                    <label for="glucosa">
+                        <span>Glucosa</span>
+                        <input type="text" name="glucosa" id="glucosa">
+                    </label>
+                    <label for="urea">
+                        <span>Urea</span>
+                        <input type="text" name="urea" id="urea">
+                    </label>
+                    <label for="creatinina">
+                        <span>Creatinina</span>
+                        <input type="text" name="creatinina" id="creatinina">
+                    </label>
+                    <label for="plt">
+                        <span>Plt.</span>
+                        <input type="text" name="plt" id="plt">
+                    </label>
+                    <label for="tp">
+                        <span>TP</span>
+                        <input type="text" name="tp" id="tp">
+                    </label>
+                    <label for="tpt">
+                        <span>TPT</span>
+                        <input type="text" name="tpt" id="tpt">
+                    </label>
+                    <label for="inr">
+                        <span>INR</span>
+                        <input type="text" name="inr" id="inr">
+                    </label>
+                    <label for="otros">
+                        <span>Otros</span>
+                        <input type="text" name="otros" id="otros">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        <h4>
+                            Diagnostico
+                        </h4>
+                    </legend>
+                    <label for="diagnostico">
+                        <textarea name="diagnostico" id="diagnostico" form="historiaclinica" rows="2" cols="50"></textarea>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        <h4>
+                            Plan Quirurgico
+                        </h4>
+                    </legend>
+                    <label for="planQuirurgico">
+                        <textarea name="planQuirurgico" id="planQuirurgico" form="historiaclinica" rows="2" cols="50"></textarea>
+                    </label>
+                </fieldset>
+            -->
+                <input type="submit" value="Guardar y Enviar" class="primary-button send-button"/>
+            </form>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
