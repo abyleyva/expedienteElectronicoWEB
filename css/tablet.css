@@ -1,0 +1,8 @@
+.logo {
+    display: none;
+}
+.secondary-button {
+    position:absolute;
+    bottom: 10px;
+    width: 300px;
+}
