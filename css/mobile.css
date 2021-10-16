@@ -42,8 +42,9 @@
    flex-direction:column;   
 }
 .form__fieldset{
+    padding: 30px;
     display: grid;
-    place-items: left;
+    border-radius: 20px;
 }
 .form a {
     color: var(--color-primary);
