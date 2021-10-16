@@ -13,7 +13,7 @@
 .form-container {
     display:grid;
     grid-template-rows: auto 1fr auto;
-    width: 200px;
+    width: 300px;
     justify-items:center;
 }
 .logo {
@@ -42,7 +42,8 @@
    flex-direction:column;   
 }
 .form__fieldset{
-    margin-bottom: 32px;
+    display: grid;
+    place-items: left;
 }
 .form a {
     color: var(--color-primary);
