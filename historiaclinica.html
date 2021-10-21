@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expediente Electrónico - Historia Clínica</title>
     <link rel="stylesheet" href="./css/vars.css">
-    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/historiaclinica.css">
     <link rel="stylesheet" href="./css/tablet.css" media="(min-width:640px)" />
 </head>
 <body>
@@ -22,8 +22,8 @@
                 <img src="./assets/Logos/logo_bota_fora.svg" alt="logo">
             </figure>
             <section class="form-title"><h1 class="title">HISTORIA CLINICA</h1></section> 
-            <!--<p class="subtitle">Medico Especialista - Detalle de Historia Clinica</p>-->
-            <form action="/" class="form">
+            <p class="subtitle">Medico Especialista - Detalle de Historia Clinica</p>
+            <form action="/" class="form" id="historiaclinica">
                 <fieldset class="form__fieldset">
                     <legend><h4>FICHA CLINICA</h4></legend>
                     <label for="nombre" class="label">Nombre</label>
@@ -48,10 +48,10 @@
                     <label for="correo" class="label">Correo</label>
                     <input type="email" class="input" id="correo" name="correo" placeholder="nombre@correo.com" autocomplete="email" required />
                 </fieldset>
-                
+                <!--
                 <fieldset class="form__fieldset">
                     <legend><h4>MOTIVO DE CONSULTA</h4></legend>
-                    <textarea name="motivoconsulta" class="input" id="motivoconsulta" form="historiaclinica" rows="5" cols="50"></textarea>
+                    <textarea name="motivoconsulta" class="input" id="motivoconsulta" form="historiaclinica" rows="6" cols="10"></textarea>
                 </fieldset>
                 <fieldset class="form__fieldset">
                     <legend>
@@ -243,6 +243,7 @@
                     <textarea name="planQuirurgico" class="input" id="planQuirurgico" form="historiaclinica" rows="2" cols="50"></textarea>
                 </fieldset>
                 <input type="submit" value="Guardar y Enviar" class="primary-button send-button"/>
+                -->
             </form>
         </section>
     </main>
