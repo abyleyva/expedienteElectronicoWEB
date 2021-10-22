@@ -16,14 +16,20 @@
     flex-direction:column;  
  }
  .form__fieldset{
+    width: 560px;
     padding: 30px;
     margin-bottom: 20px;
     border-radius: 20px;
     display: grid;
 }
 .form-fset__fichaClinica {
-    grid-template-columns: 15%25%25%25%;
+    grid-template-columns: 20%80%;
 }
+
+.form-fset__antecedentesPersonales{
+    grid-template-columns: 100px 120px 120px 120px;
+    gap: 10px;
+}   
 .input-textarea{
     height: 60px;;
 }
