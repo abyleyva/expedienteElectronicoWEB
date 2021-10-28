@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exp. Electrónico - Historia Clínica V2</title>
+    <link rel="stylesheet" href="./css/historiaclinicav2.css">
+</head>
+<body>
+    <h1>CSS Grid Layout - Dimension: 16 X N</h1>
+    <div class="container">
+        <form action="/" class="form" id="historiaclinica">
+            <fieldset class="form__fieldset grid-layout-form">
+                <legend><h4>FICHA CLINICA</h4></legend>
+                <label for="nombre" class="label lnombre">Nombre</label>
+                <input type="text" class="input inombre" id="nombre" name="nombre" placeholder="Nombre" /> 
+                <label for="fechaNacimento" class="label lfechanacimiento">Fecha Nacimento</label>  
+                <input type="date" class="input ifechanacimiento" id="fechaNacimento" name="fechaNacimento" autocomplete="bday" required />
+                <label for="edad" class="label ledad">Edad</label>
+                <input type="number" class="input iedad" id="edad" name="edad" placeholder="Edad" />
+                <label for="sexo" class="label">Sexo</label>
+                <input list="sexo" class="input">
+                <datalist id="sexo">
+                    <option value="Sin Especificar"></option>
+                    <option value="M"></option>
+                    <option value="F"></option>
+                </datalist>
+                <label for="ocupacion" class="label">Ocupacion</label>
+                <input type="text" class="input" id="ocupacion" name="ocupacion" placeholder="Ocupacion" />
+                <label for="domicilio" class="label">Domicilio</label>
+                <input type="text" class="input" id="domicilio" name="domicilio" placeholder="Domicilio" autocomplete="address-level1" />
+                <label for="telefono" class="label">Tel./Cel.</label>
+                <input type="text" class="input" id="telefono" name="telefono" placeholder="Telefono / Celular" required />
+                <label for="correo" class="label">Correo</label>
+                <input type="email" class="input" id="correo" name="correo" placeholder="nombre@correo.com" autocomplete="email" required />
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
